@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Gallery from "../components/Gallery.astro";
+import Cards from "../components/Cards.astro";
+---
+
+<Layout
+  title="Água Purificada Máxima"
+  description="Água Máxima, fresca y pura gota a gota"
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-32" id="inicio">
+      <h1
+        class="text-3xl font-bold pb-6 flex flex-wrap gap-x-4 items-center md:text-4xl md:pb-8 lg:text-5xl lg:pb-10"
+      >
+        <span>Água Máxima,</span><span class="text-green-400">
+          fresca y pura</span
+        >
+        gota a gota.
+      </h1>
+      <h2
+        class="text-xl lg:text-2xl font-semibold md:text-2xl max-w-[700px] text-pretty"
+      >
+        Agrega tu dirección y descubre los servicios disponibles que tenemos
+        para ti.
+      </h2>
+
+      <button
+        type="button"
+        class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+        >Agregar dirección</button
+      >
+    </SectionContainer>
+
+    <SectionContainer class="py-44 pb-32" id="sobre-nosotros">
+      <h1
+        class="text-3xl font-bold pb-6 flex flex-wrap gap-x-4 items-center md:text-4xl md:pb-8 lg:text-5xl lg:pb-10"
+      >
+        ¿Por qué Água Máxima?
+      </h1>
+      <Cards />
+    </SectionContainer>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
