@@ -1,12 +1,20 @@
+---
+import ButtonArrow from "../components/ButtonArrow.astro";
+---
+
 <div id="cards-container" class="grid grid-cols-1 sm:grid-cols-3">
   <div
-    class=" bg-white border border-gray-200 rounded-lg shadow mx-3 mt-6"
+    class="bg-white border border-gray-200 rounded-lg shadow mx-3 mt-6 h-fit"
     id="osmosis-inversa"
   >
     <a href="#">
-      <img class="rounded-t-lg" src="./public/project/svgl2.webp" alt="" />
+      <img
+        class="rounded-t-lg h-[225px] w-full"
+        src="https://lh5.googleusercontent.com/proxy/PaK0JiwgTxkQlkzjFkzIbd70YU-655GZTrCW1hlobtypidb6boi2LN4sk2oSNAwucXr2aaWxMgL3ysTbvg8fxpVZCCyH3blq0pBHTNNQ9m5w2H6TSRVya1BrOVt0ZFL431wctxLwoGMXIirV"
+        alt=""
+      />
     </a>
-    <div class="p-6">
+    <div class="p-5">
       <a href="#">
         <h2
           class="text-xl md:text-2xl lg:text-2xl font-semibold max-w-[700px] text-pretty"
@@ -16,17 +24,24 @@
       </a>
       <p class="text-xl text-gray-700 text-pretty">
         Con ósmosis inversa, obtienes agua pura al instante. Elimina hasta el
-        99% de impurezas para una hidratación segura y deliciosa.
+        99% de impurezas para una hidratación segura, deliciosa y de la más alta
+        calidad para tu hogar.
       </p>
     </div>
+
+    <ButtonArrow />
   </div>
 
   <div
-    class="bg-white border border-gray-200 rounded-lg shadow mx-3 mt-6"
+    class="bg-white border border-gray-200 rounded-lg shadow mx-3 mt-6 h-fit"
     id="luz-ultravioleta"
   >
     <a href="#">
-      <img class="rounded-t-lg" src="./public/project/svgl2.webp" alt="" />
+      <img
+        class="rounded-t-lg h-[225px] w-full"
+        src="https://aquapro-la.com/catalogo/sistemas_uv/info/COMPOSICI%C3%93N_UV_JARRA_750.jpg"
+        alt=""
+      />
     </a>
     <div class="p-5">
       <a href="#">
@@ -38,18 +53,20 @@
       </a>
       <p class="text-xl text-gray-700 text-pretty">
         Con luz ultravioleta, tu agua alcanza un nivel superior de pureza y
-        seguridad.¡Disfruta de agua cristalina y saludable con la confianza de la
-        desinfección UV!
+        seguridad.¡Disfruta de agua cristalina y saludable con la confianza de
+        la desinfección UV!
       </p>
     </div>
+
+    <ButtonArrow />
   </div>
 
   <div
-    class="bg-white border border-gray-200 rounded-lg shadow mx-3 mt-6"
+    class="bg-white border border-gray-200 rounded-lg shadow mx-3 mt-6 h-fit"
     id="ionizacion"
   >
     <a href="#">
-      <img class="rounded-t-lg" src="./public/project/svgl2.webp" alt="" />
+      <img class="rounded-t-lg h-[225px] w-full" src="https://cdn-blog1.fibrasynormasdecolombia.com/wp-content/uploads/2021/03/1308ior-1024x768.jpg.webp" alt="" />
     </a>
     <div class="p-5">
       <a href="#">
@@ -61,10 +78,11 @@
       </a>
       <p class="text-xl text-gray-700 text-pretty">
         Con ionización, tu agua alcanza un nivel incomparable de frescura y
-        vitalidad. Disfruta de una hidratación enriquecida y siente la diferencia en cada
-        sorbo.
+        vitalidad. Disfruta de una hidratación enriquecida y siente la
+        diferencia en cada sorbo.
       </p>
     </div>
-  </div>
 
+    <ButtonArrow />
+  </div>
 </div>

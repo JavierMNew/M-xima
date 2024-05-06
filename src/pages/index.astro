@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Cards from "../components/Cards.astro";
-import Button from "../components/Button.astro";
+import ButtonHand from "../components/ButtonHand.astro";
 ---
 
 <Layout
@@ -10,7 +10,7 @@ import Button from "../components/Button.astro";
   description="Agua Máxima, fresca y pura gota a gota"
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-32" id="inicio">
+    <SectionContainer class="py-44  lg:w-[740px]" id="inicio">
       <h1
         class="text-3xl font-bold pb-6 flex flex-wrap gap-x-4 items-center md:text-4xl md:pb-8 lg:text-5xl lg:pb-10"
       >
@@ -26,17 +26,19 @@ import Button from "../components/Button.astro";
         para ti.
       </h2>
 
-      <Button />
+      <ButtonHand ref="#agregar-direcion" text="Agrega tu dirección"/>
 
     </SectionContainer>
     
-    <SectionContainer class="py-44 pb-32" id="sobre-nosotros">
+    <SectionContainer class="py-44  lg:w-[1080px]" id="sobre-nosotros">
       <h1
         class="text-3xl font-bold pb-6 flex flex-wrap gap-x-4 items-center md:text-4xl md:pb-8 lg:text-5xl lg:pb-10 justify-center"
       >
         ¿Por qué Agua Máxima?
       </h1>
+
       <Cards />
+
     </SectionContainer>
   </main>
 </Layout>
@@ -45,7 +47,7 @@ import Button from "../components/Button.astro";
   main {
     margin: auto;
     padding: 1rem;
-    width: 800px;
+    
     max-width: calc(100% - 2rem);
     color: rgb(0, 0, 0);
     font-size: 20px;
